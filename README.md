@@ -5,25 +5,25 @@ Na potrzeby pracy stworzona została gra, która odwołuje się do klasycznej fo
 Opis poszczególnych funkcjonalności:
 
 1. ### 'BlackHole'
-  Pola grawitacyjne są obszarami, które w grze wizualnie przypominają czarne dziury obracające się wokół własnej osi i wywołujące silne siły grawitacyjne. Te obszary tworzą efekt wizualny i mechaniczny, który sprawia, że obiekty w grze zachowują się, jakby były przyciągane do środkowego punktu czarnej dziury.
+  	Pola grawitacyjne są obszarami, które w grze wizualnie przypominają czarne dziury obracające się wokół własnej osi i wywołujące silne siły grawitacyjne. Te obszary tworzą efekt wizualny i mechaniczny, który sprawia, że obiekty w grze zachowują się, jakby były przyciągane do środkowego punktu czarnej dziury.
 
 2. ### 'BulletBehavior'
-  Zachowywanie się (tworzenie, przemieszanie się, usuwanie) wystrzelowych kul przez przeciwników.
+  	Zachowywanie się (tworzenie, przemieszanie się, usuwanie) wystrzelowych kul przez przeciwników.
   
 3. ### 'CameraController'
-  Opisuje sposób działania głównej kamery podczas rozgrywki.
+  	Opisuje sposób działania głównej kamery podczas rozgrywki.
   
 4. ### 'EnemyFollower' / 'FallingHead'
-  Sposób funkcjonowania przeciwników.
+  	Sposób funkcjonowania przeciwników.
   
 5. ### 'Gravity'
 	Na ostatnim poziomie gracz będzie miał również do czynienia z mechaniką obrócenia grawitacji. Obiekt zmieniający grawitację, który wyglądem przypomina wystrzeliwane kulki, został utworzony za pomocą Particle System. 
 
-6. ### 'ItemCollector'
-  Każda truskawka posiada ustawiony collider za pomocą użycia właściwości w komponencie Box Collider 2D oraz ustawiony wcześniej przygotowany tag obiektu, w tym przypadku o nazwie „Strawberry”. Po wykryciu kolizji gracza z obszarem obiektu oznaczonym kolizją przypominającym truskawkę, następuje wywołanie metody o nazwie OnTriggerEnter2D(Collider2D collision), która za argument przyjmuje informacje o obiekcie, który naruszył obszar kolizji.  Natomiast w samej metodzie następuje dodanie jednej truskawki do aktualnego stanu oraz zmieniany jest napis znajdujący w interfejsie rozgrywki.
+7. ### 'ItemCollector'
+  	Każda truskawka posiada ustawiony collider za pomocą użycia właściwości w komponencie Box Collider 2D oraz ustawiony wcześniej przygotowany tag obiektu, w tym przypadku o nazwie „Strawberry”. Po wykryciu kolizji gracza z obszarem obiektu oznaczonym kolizją przypominającym truskawkę, następuje wywołanie metody o nazwie OnTriggerEnter2D(Collider2D collision), która za argument przyjmuje informacje o obiekcie, który naruszył obszar kolizji.  Natomiast w samej metodzie następuje dodanie jednej truskawki do aktualnego stanu oraz zmieniany jest napis znajdujący w interfejsie rozgrywki.
 
 7. ### 'PlayerData'
-  Pobierane są dane, wymagające zapisu tj. ilość truskawek, poziom głośności muzyki oraz aktualny poziom rozgrywki. Ilość truskawek oraz aktualny poziom zapisane są podczas przejścia poziomu, natomiast głośność muzyki podczas zmiany w pasku intensywności muzyki. Dane przechowywane są w wcześniej przygotowanej klasie, podczas potrzeby zapisu, dane są serializowane za pomocą BinaryFormattera. Dzięki tej technice dane są nieczytelne dla człowieka, co pozwala uniknąć ingerencji oszustów w plik z zapisem stanu rozgrywki w celu ułatwienie sobie rozgrywki. 
+  	Pobierane są dane, wymagające zapisu tj. ilość truskawek, poziom głośności muzyki oraz aktualny poziom rozgrywki. Ilość truskawek oraz aktualny poziom zapisane są podczas przejścia poziomu, natomiast głośność muzyki podczas zmiany w pasku intensywności muzyki. Dane przechowywane są w wcześniej przygotowanej klasie, podczas potrzeby zapisu, dane są serializowane za pomocą BinaryFormattera. Dzięki tej technice dane są nieczytelne dla człowieka, co pozwala uniknąć ingerencji oszustów w plik z zapisem stanu rozgrywki w celu ułatwienie sobie rozgrywki. 
 
 ## Instalacja i uruchomienie
 
